@@ -1,0 +1,11 @@
+
+function confirmEnding(str, target) {
+  //slice method is used to return a copy of a string, the first parameter(is starting index and last parameter is the index to stop at but not include)
+  //we use str.length-target.length so that the answer is the length of remainder as a value eg.(15-7=8),because in our case, target is at the end, the value we get (which as the first parameter is a starting index)is an index of eg(8), but indexing starts from 0, so this makes sure it will exclude the first characters
+  let result=str.slice(str.length-target.length);
+  if(result==target){return true;}
+  return false;
+ 
+}
+
+confirmEnding("Bastian", "n");

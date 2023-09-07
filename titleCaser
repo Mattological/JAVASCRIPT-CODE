@@ -1,0 +1,20 @@
+function titleCase(str) {
+  let finString;
+  str=str.toLowerCase();
+  str=str.split(' ');
+  let finWord
+  let finArray=[];
+  for(let i=0;i<str.length;i++){
+    let word=str[i];
+    word=word.split('');
+    word[0]=word[0].toUpperCase();
+       finWord=word.join('');
+       finArray.push(finWord);
+  }
+  finString=finArray.join(' ');
+  console.log(finString);
+  return finString;
+}
+
+titleCase("I'm a little tea pot");
+titleCase('HERE IS MY SPOUT')
